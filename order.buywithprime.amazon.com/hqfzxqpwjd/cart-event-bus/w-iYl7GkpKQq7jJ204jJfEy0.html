@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" color-scheme="light">
+  <head>
+    
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="widget-type" content="buyability">
+    <title>Buy With Prime</title>
+    <script nonce="b1ea8c3ee8c8763f940bc5e734f70792" data-sf-feature="sf-host" type="application/json">
+      {
+        "clickStreamTenantArn": "arn:aws:irtysh:us-east-1:158113192558:tenant/4823d7e4-8eb0-479e-9caa-76e2d5cc0b14",
+        "theme": "bwp",
+        "skipPageLoadEmit": true
+      }
+    </script>
+    <script nonce="b1ea8c3ee8c8763f940bc5e734f70792">
+      window.clickstream = window.clickstream || {};
+      window.clickstream.createTracker = (applicationId) => {
+        return Promise
+          ? new Promise((resolve) => {
+            const intervalId = setInterval(() => {
+              if (window.clickstream.__createClickstream) {
+                clearInterval(intervalId);
+                resolve(window.clickstream.__createClickstream(applicationId));
+              }
+            }, 100);
+          })
+          : undefined;
+      };
+    </script>
+    <script nonce="b1ea8c3ee8c8763f940bc5e734f70792" id="clickstream-script" async src="/static/storefront-host/clickstream.f6759f7ec7dae1953b8a.js"></script>
+    <script nonce="b1ea8c3ee8c8763f940bc5e734f70792">
+      document
+        .getElementById('clickstream-script')
+        .addEventListener('load', () => {
+          window.clickstream.init('arn:aws:irtysh:us-east-1:158113192558:tenant/4823d7e4-8eb0-479e-9caa-76e2d5cc0b14');
+        });
+    </script>
+    
+    <script nonce="b1ea8c3ee8c8763f940bc5e734f70792" defer src="https://cdn.us-east-1.prod.moon.dubai.aws.dev/5BxYQVlPVti7/B97IdePSMNDH/1/WBCuGnYbwT/scripts/event_bus.bundle.js" data-sf-preload></script>
+    <script nonce="b1ea8c3ee8c8763f940bc5e734f70792" id="amzn-style-data" type="application/json">
+      {
+        "buttonCornerRadius": "4",
+        "buttonCornerType": "PILL",
+        "widgetLayout": "BUTTON_ONLY",
+        "colorTheme": "LIGHT"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="no-op"></div>
+  </body>
+</html>
